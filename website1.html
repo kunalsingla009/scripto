@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+         :root {
+            --navbar-height: 59px;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+        
+        #navbar::before {
+            content: "";
+            background-color: rgb(54, 51, 51);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        
+        #logo {
+            margin: 7px 30px;
+        }
+        
+        #logo img {
+            height: 70px;
+            margin: 5px 6px;
+            border-radius: 8rem;
+        }
+        
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai', cursive;
+            grid-gap: 1.5rem;
+            padding-left: 28rem;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+            grid-gap: 2rem;
+        }
+        
+        #navbar ul li a {
+            color: rgb(249, 242, 242);
+            display: block;
+            padding: 12px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            box-shadow: 0px 8px 12px 0px rgba(0, 0, 1, 0.5);
+        }
+        
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+        
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 20px;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+            position: absolute;
+            background-image: url("./A6.png");
+            background-repeat: no-repeat;
+            height: 678;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        
+        #home h1 {
+            color: rgb(13, 11, 11);
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        #home p {
+            color: rgb(35, 31, 31);
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: rgb(165, 125, 125);
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            color: rgb(29, 14, 16);
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .h-primary {
+            background-c: ;
+        }
+        
+        #contact {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="home">
+            <nav id="navbar">
+                <div id="logo">
+                    <img src="./A2.png" alt="">
+                </div>
+                <ul>
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="calender.html">Calender</a></li>
+                    <li class="item"><a href="share.html">Share task</a></li>
+                    <li class="item"><a href="message.html">Message</a></li>
+                    <li class="item"><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <section id="home">
+                <h1 class="h-primary">Welcome!</h1>
+                <p>Good to see you here</p>
+                <button class="btn">Click here</button>
+            </section>
+        </div>
+
+</body>
+
+
+</html>
